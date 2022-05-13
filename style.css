@@ -1,1 +1,108 @@
 @import "globals.css";
+
+header {
+  height: 75px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+main {
+  /* border: 2px solid red; */
+  /* display: grid; */
+  /* grid-auto-flow: row; */
+  /* gap: 3px; */
+  /* grid-template-rows: 75px auto; */
+  /* grid-template-columns: ; */
+}
+
+.abschnitt1 {
+  /* background-color: var(--main-background); */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Question-card */
+.question-card {
+  border: 1px solid;
+  border-radius: 2px;
+  position: relative;
+  height: 200px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.question {
+  text-align: center;
+}
+.but {
+  margin: 0px auto;
+}
+.liste {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+.tag {
+  position: absolute;
+  top: -0.7rem;
+  right: 1rem;
+}
+/*abschnitt2*/
+.abschnitt2 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*abschnitt3*/
+.abschnitt3 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+textarea {
+  margin: 25px;
+}
+.abschnitt4 {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+img {
+  position: absolute;
+  left: 3rem;
+  top: 3rem;
+  border: 1px solid;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+figcaption {
+  position: absolute;
+  right: 3rem;
+}
+footer {
+  height: 50px;
+  width: 100%;
+  position: sticky;
+}
+
+button {
+  height: 20px;
+  width: 90px;
+}
