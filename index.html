@@ -8,18 +8,19 @@
     <title>Quiz-App</title>
   </head>
   <body>
+    <header><h1>Quiz--Game</h1></header>
     <main>
-      <h2>Quiz-App</h2>
-      <section class="quiz-app">
+      <!---abschnitt1-->
+      <section class="abschnitt1">
+        <h2>Quiz-App</h2>
         <div class="question-card">
-          <a class="bookmark" href="#"></a>
+          <a class="tag" href="#">A</a>
           <p class="question">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
             reprehenderit culpa aliquam dolorem libero ea a explicabo nihil?
           </p>
           <button class="but show-hide-answer">Show answer</button>
-          <!-- <p class="theAnswer"></p> -->
-          <ul class="tags">
+          <ul class="liste">
             <li>tag1</li>
             <li>tag2</li>
             <li>tag3</li>
@@ -27,43 +28,78 @@
           </ul>
         </div>
       </section>
-      <section class="bookmarks">
+      <!---abschnitt2-->
+      <section class="abschnitt2">
         <h2>Bookmarks</h2>
-        <div class="question bookmarked"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid quaerat culpa magni error vero?</p>
-            <button class="but show-hide-answer">Show answer</button>
+        <div class="question-card">
+          <a class="tag" href="#">A</a>
+          <p class="question">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            reprehenderit culpa aliquam dolorem libero ea a explicabo nihil?
+          </p>
+          <button class="but show-hide-answer">Show answer</button>
+          <ul class="liste">
+            <li>tag1</li>
+            <li>tag2</li>
+            <li>tag3</li>
+            <li>tag4</li>
+          </ul>
         </div>
-      </section>
-      <section class="create">
+      
+      <div class="question-card">
+        <a class="tag" href="#">A</a>
+        <p class="question">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          reprehenderit culpa aliquam dolorem libero ea a explicabo nihil?
+        </p>
+        <button class="but show-hide-answer">Show answer</button>
+      
+        <ul class="liste">
+          <li>tag1</li>
+          <li>tag2</li>
+          <li>tag3</li>
+          <li>tag4</li>
+        </ul>
+      </div>
+    </section>
+      <!---abschnitt3-->
+      <section class="abschnitt3">
+        <h2>Create</h2>
           <form action="">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, nulla.</p>
-              <textarea name="" id="" cols="30" rows="10" placeholder="Enter your question"></textarea>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, iure?</p>
-              <textarea name="" id="" cols="30" rows="10" placeholder="Enter your answer"></textarea>
-              <input type="text" maxlength="30">
+              
+              <textarea name="" id="" cols="30" rows="5" placeholder="Enter your question"></textarea>
+              
+              <textarea name="" id="" cols="30" rows="5" placeholder="Enter your answer"></textarea>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <input type="text" maxlength="30" placeholder="textinput">
             </form>
             <button class="but submit">submit</button>
       </section>
-      <section class="profile">
-          <img src="" alt="">
+      <!---abschnitt4-->
+      <section class="abschnitt4">
+        <h2>Profile</h2>
+        <figure>
+          <img src="" alt="bild">
+          <figcaption>Foto des Kollegen</figcaption>
+        </figure>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos a ut vel mollitia laborum impedit porro minima et consequuntur illo? Porro vitae modi eius vel officia consequatur? Atque, ipsam impedit.</p>
-          <ul class="tags">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+          
+          <ul class="liste">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
           </ul>
           <button class="but logout">logout</button>
       </section>
     </main>
     <footer>
-      <nav>
-        <ul>
+        <ul class="liste">
           <li><a href="#">quiz-app</li></a>
           <li><a href="#">Bookmarks</li></a>
           <li><a href="#">Create</li></a>
           <li><a href="#">Settings</li></a>
         </ul>
-      </nav>
     </footer>
   </body>
 </html>
