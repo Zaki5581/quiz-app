@@ -8,7 +8,6 @@ body {
     orange
   );
 }
-
 header {
   height: 75px;
   text-align: center;
@@ -51,12 +50,15 @@ h2 {
   justify-content: space-around;
   margin: auto;
   transition: 0.4s ease-in 0.2s;
+  perspective: 800px;
+  perspective-origin: left top;
 }
 
 .question {
   text-align: center;
 }
 .but {
+  cursor: pointer;
   margin: 0px auto;
   height: 1.5rem;
   width: 8rem;
@@ -76,9 +78,6 @@ h2 {
   text-decoration: none;
   color: var(--main-color);
 }
-ion-icon {
-  border: 2px solid red;
-}
 
 /*bookmarks*/
 .bookmarks {
@@ -91,6 +90,7 @@ ion-icon {
   position: absolute;
   top: -1rem;
   right: 1rem;
+  transition: 2s ease-in-out;
 }
 /*create*/
 .create {
@@ -160,7 +160,7 @@ a {
   text-decoration: none;
   color: var(--main-color);
 }
-
+/* :hover */
 img:hover {
   width: 14rem;
   height: 20rem;
@@ -172,4 +172,22 @@ img:hover {
 .question-card:hover {
   box-shadow: -2px -2px 4px 4px rgba(128, 128, 128, 0.299);
   cursor: pointer;
+}
+/* script */
+.text--color {
+  color: red;
+}
+.item__moove {
+  /* opacity: 0; */
+  /* position: absolute;
+  top: -1rem;
+  right: 12rem;
+  transition: 1.5s ease-in-out; */
+  transform: translate3d(-190px, 50px, 350px);
+}
+.item2__moove {
+  top: -1rem;
+  right: 12rem;
+  transition: 1.5s ease-in-out;
+  /* transform: translate3d(-190px, 50px, 350px); */
 }

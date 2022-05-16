@@ -25,13 +25,14 @@
           <ion-icon
             class="ion-icon__bookmarks"
             size="large"
+            data-js="item"
             name="bookmark"
           ></ion-icon>
-          <p class="question">
+          <p class="question" data-js="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
             reprehenderit culpa aliquam dolorem libero ea a explicabo nihil?
           </p>
-          <button type="submit" class="but">Show answer</button>
+          <button class="but" data-js="button-js">Show answer</button>
           <ul class="liste">
             <li><ion-icon size="large" name="medal-outline"></ion-icon></li>
             <li><ion-icon size="large" name="car-sport-outline"></ion-icon></li>
@@ -45,17 +46,18 @@
       <!---bookmarks-->
       <section class="bookmarks" id="bookmarks">
         <h2>Bookmarks</h2>
-        <div class="question-card">
+        <div class="question-card" data-js="karte">
           <ion-icon
             class="ion-icon__bookmarks"
             size="large"
             name="bookmark"
+            data-js="item2"
           ></ion-icon>
           <p class="question">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
             reprehenderit culpa aliquam dolorem libero ea a explicabo nihil?
           </p>
-          <button class="but">Show answer</button>
+          <button class="but" data-js="item2--button">Show answer</button>
           <ul class="liste">
             <li>tag1</li>
             <li>tag2</li>
@@ -143,6 +145,7 @@
         </li>
       </ul>
     </footer>
+    <script src="app.js" defer></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
