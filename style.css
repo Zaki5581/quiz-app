@@ -1,4 +1,4 @@
-@import "globals.css";
+@import "./globals.css";
 
 body {
   background-image: linear-gradient(
@@ -29,6 +29,7 @@ main {
 h2 {
   width: 33%;
   text-align: center;
+  /* font-size: 3rem; */
 }
 .quiz {
   height: 100vh;
@@ -174,10 +175,10 @@ img:hover {
   cursor: pointer;
 }
 /* script */
-.text--color {
+.question--one__color {
   color: red;
 }
-.item__moove {
+.item--one__move {
   /* opacity: 0; */
   /* position: absolute;
   top: -1rem;
@@ -185,7 +186,7 @@ img:hover {
   transition: 1.5s ease-in-out; */
   transform: translate3d(-190px, 50px, 350px);
 }
-.item2__moove {
+.item--two__move {
   top: -1rem;
   right: 12rem;
   transition: 1.5s ease-in-out;

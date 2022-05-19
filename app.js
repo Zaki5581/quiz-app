@@ -1,40 +1,40 @@
-//white text//
-const textElement = document.querySelector('[data-js = "text"]');
-const button = document.querySelector('[data-js = "button-js"]');
+//white text - question--one__text-color//
+const textElement = document.querySelector('[data-js = "question--one"]');
+const button = document.querySelector('[data-js = "button--question--one"]');
 
-function onButtonClick() {
-  textElement.classList.toggle("text--color");
-}
-button.addEventListener("click", onButtonClick);
+button.addEventListener("click", () => {
+  textElement.classList.toggle("question--one__color");
+});
 
-function changeQuestion() {
+/* Q&A Switch/question--one */
+
+button.addEventListener("click", () => {
   textElement.textContent = "Hier könnte die Antwort stehen.";
   button.textContent = "Hide answer";
-  text2.textContent = "Hier auch";
+});
+
+/* Q/A Switch/question--two  */
+const secondButton = document.querySelector(
+  '[data-js="button--question--two"]'
+);
+const text2 = document.querySelector('[data-js = "question--two"]');
+
+secondButton.addEventListener("click", () => {
+  text2.textContent = "Hier auch!!";
   secondButton.textContent = "Hide answer";
-}
-button.addEventListener("click", changeQuestion);
+});
 
-function onButtonClick() {
-  textElement.classList.toggle("text--color");
-}
+/* */
+/*bookmark question--one__animation */
 
-/*bookmark*/
+const item = document.querySelector('[data-js="item--one"]');
 
-const item = document.querySelector('[data-js="item"]');
+button.addEventListener("click", () => {
+  item.classList.toggle("item--one__move");
+});
+/*item--two__move*/
+const item2 = document.querySelector('[data-js="item--two"]');
 
-function mooveItem1() {
-  item.classList.toggle("item__moove");
-}
-button.addEventListener("click", mooveItem1);
-/*item2__moove item2--button*/
-const text2 = document.querySelector('[data-js = "text2"]');
-const item2 = document.querySelector('[data-js="item2"]');
-
-const secondButton = document.querySelector('[data-js="item2--button"]');
-
-function mooveItem2() {
-  item2.classList.toggle("item2__moove");
-}
-secondButton.addEventListener("click", mooveItem2);
-secondButton.addEventListener("click", changeQuestion);
+secondButton.addEventListener("click", () => {
+  item2.classList.toggle("item--two__move");
+});
