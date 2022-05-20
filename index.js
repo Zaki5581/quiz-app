@@ -1,16 +1,31 @@
-//white text - question--one__text-color//
+// - question--one__text-color//
 const textElement = document.querySelector('[data-js = "question--one"]');
 const button = document.querySelector('[data-js = "button--question--one"]');
+const buttonNext = document.querySelector(
+  '[data-js = "button--question--one2"]'
+);
 
-button.addEventListener('click', () => {
-  textElement.classList.toggle('question--one__color');
-});
+const answer = document.querySelector('[data-js="answer--text"]');
 
 /* Q&A Switch/question--one */
 
 button.addEventListener('click', () => {
+  // textElement.classList.toggle('question--one__color');
   textElement.textContent = 'Hier könnte die Antwort stehen.';
   button.textContent = 'Hide answer';
+  // button.textContent = 'Hide answer';
+  // buttonNext.textContent = 'Next question';
+  //answer.classList.remove('answer--text');
+  // textElement.classList.remove('hide');
+});
+
+//  buttonNext
+
+buttonNext.addEventListener('click', () => {
+  // textElement.classList.add('hide');
+  // answer.classList.add('answer--text');
+  // textElement.classList.add('hide');
+  // textElement.textContent = 'Die zweite Frage';
 });
 
 /* Q/A Switch/question--two  */
@@ -30,7 +45,8 @@ secondButton.addEventListener('click', () => {
 const item = document.querySelector('[data-js="item--one"]');
 
 button.addEventListener('click', () => {
-  item.classList.toggle('item--one__move');
+  item.classList.add('item--one__move');
+  // item.classList.add('item1__color');
 });
 /*item--two__move*/
 const item2 = document.querySelector('[data-js="item--two"]');
