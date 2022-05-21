@@ -7,8 +7,6 @@ body {
 header {
   height: 75px;
   text-align: center;
-
-  /* position: relative; */
   margin-bottom: 60px;
 }
 
@@ -18,6 +16,11 @@ h1 {
   font-weight: normal;
 }
 
+h2 {
+  width: 33%;
+  text-align: center;
+}
+
 main {
   color: var(--main-color);
   font-family: var(--font-style-2);
@@ -25,17 +28,8 @@ main {
   line-height: 1.3rem;
 }
 
-h2 {
-  width: 33%;
-  text-align: center;
-
-  /* font-size: 3rem; */
-}
-
 .quiz {
   height: 100vh;
-
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,17 +37,15 @@ h2 {
 
 /* Question-card */
 .question-card {
-  /* border: 0.2px solid; */
   border-radius: 2px;
-  border: 1px solid;
   box-shadow: 1px 1px 2px 2px rgba(128 128 128 /42.9%);
   position: relative;
-  height: 13rem;
+  height: 17rem;
   width: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: auto;
+  margin: 10px auto;
   transition: 0.4s ease-in 0.2s;
   perspective: 800px;
   perspective-origin: left top;
@@ -61,16 +53,11 @@ h2 {
 
 .question {
   text-align: center;
+  margin-top: 30px;
 }
 
-.liste,
-.footer__options {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style: none;
-  text-decoration: none;
-  color: var(--main-color);
+.question1 {
+  margin-top: auto;
 }
 
 /* bookmarks */
@@ -80,13 +67,6 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.ion-icon__bookmarks {
-  position: absolute;
-  top: -1rem;
-  right: 1rem;
-  transition: 2s ease-in-out;
 }
 
 /* create */
@@ -102,12 +82,13 @@ h2 {
 form {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 textarea,
 input {
   margin: 1rem 2rem;
-  background-color: rgba (251, 240, 240, 50%);
+  background-color: rgba(55 51 51 /25.4%);
   border: none;
   border-radius: 2px;
 }
@@ -140,13 +121,34 @@ figcaption {
   font-size: 1.3rem;
 }
 
-footer {
-  background-color: rgba(255 228 196 /46.6%);
-  font-family: var(--font-style-1);
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(132 130 127 /65.8%);
   height: 50px;
-  position: sticky;
-  bottom: 0.8rem;
+  width: 100%;
+  position: fixed;
+  bottom: 1rem;
   padding-top: 1rem;
+}
+
+.button--nav {
+  cursor: pointer;
+  margin-bottom: 15px;
+  height: 1.5rem;
+  font-family: var(--font-style-2);
+  font-size: var(--font-thickness);
+  background-color: transparent;
+  border: none;
+}
+
+.liste {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+  color: var(--main-color);
 }
 
 p {
@@ -157,6 +159,7 @@ p {
   width: 10rem;
   display: flex;
   gap: 1.2rem;
+  margin-bottom: 5rem;
 }
 
 a {
@@ -176,17 +179,22 @@ img:hover {
 
 .question-card:hover {
   box-shadow: -2px -2px 4px 4px rgba(128 128 128 /29%);
-  cursor: pointer;
 }
 
 /* script */
-.question--one__color {
-  color: red;
+
+.ion-icon__bookmarks {
+  position: absolute;
+  top: -1rem;
+  right: 1rem;
+  transition: 2s ease-in-out;
+}
+
+.item--one__color {
+  color: wheat;
 }
 
 .item--one__move {
-  /* opacity: 0; */
-
   position: absolute;
   top: -1rem;
   right: 12rem;
@@ -194,49 +202,19 @@ img:hover {
   transform: translate3d(-190px, 50px, 350px);
 }
 
-.item--two__move {
-  top: -1rem;
-  right: 12rem;
-  transition: 1.5s ease-in-out;
-  color: red;
-  transform: translate3d(-190px, 50px, 350px);
-}
-
 span {
-  display: none;
-  justify-content: center;
-  padding-top: 50px;
+  margin: 15px 0 0 40px;
 }
 
 .hide {
   display: none;
 }
 
-/* .show {
-  display: flex;
-} */
-
-.button2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.button {
+  position: absolute;
+  right: 8rem;
+  top: 5rem;
   cursor: pointer;
-  margin: 0 auto;
-  height: 1.5rem;
-  width: 8rem;
-  color: var(--main-color);
-  /* background-color: rgba(247 77 25 /46.5%); */
-  border-radius: 0.3rem;
-  border: none;
-  box-shadow: 1px 1px 1px rgb (138, 133, 137);
-  font-size: var(--font-thickness);
-}
-.button1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  margin: 0 auto;
   height: 1.5rem;
   width: 8rem;
   color: var(--main-color);
@@ -246,9 +224,30 @@ span {
   box-shadow: 1px 1px 1px rgb (138, 133, 137);
   font-size: var(--font-thickness);
 }
-.buttons {
+
+.button1 {
   display: flex;
+  justify-content: center;
 }
-/* .item1__color{
-  color: red;
-} */
+
+.submit {
+  position: absolute;
+  top: 20rem;
+  left: 13rem;
+}
+
+.bookmark--question {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button--book {
+  position: absolute;
+  top: 10rem;
+}
+
+.card--move {
+  transform: rotate(360deg);
+  transition: 0.8s ease-in-out;
+}
