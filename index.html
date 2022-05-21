@@ -19,31 +19,27 @@
     <header><h1>Quiz--Game</h1></header>
     <main>
       <!---quiz-->
-      <section class="quiz" id="quiz">
+      <section class="quiz" id="quiz" data-js="first--page">
         <h2>Quiz-App</h2>
-        <div class="question-card">
+        <div class="question-card" data-js="karte">
           <ion-icon
             class="ion-icon__bookmarks"
             size="large"
             data-js="item--one"
             name="bookmark"
           ></ion-icon>
-          <p class="question" data-js="question--one">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            reprehenderit culpa aliquam dolorem libero ea a explicabo nihil?
-          </p>
           <span class="span" data-js="answer--text"
             >aber jetzt vielleicht.aber jetzt vielleicht.aber jetzt
             vielleicht.</span
           >
-          <div class="buttons">
-            <button class="button1" data-js="button--question--one">
-              Show answer
-            </button>
-            <!-- <button class="button2" data-js="button--question--one2">
-              Next question
-            </button> -->
-          </div>
+          <button class="button button1" data-js="button--question--one">
+            Answer/Next
+          </button>
+          <p class="question question1" data-js="question--one">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            reprehenderit culpa aliquam dolorem libero ea a explicabo nihil?
+          </p>
+
           <ul class="liste">
             <li><ion-icon size="large" name="medal-outline"></ion-icon></li>
             <li><ion-icon size="large" name="car-sport-outline"></ion-icon></li>
@@ -55,20 +51,20 @@
         </div>
       </section>
       <!---bookmarks-->
-      <section class="bookmarks" id="bookmarks">
+      <section class="bookmarks" id="bookmarks" data-js="second--page">
         <h2>Bookmarks</h2>
-        <div class="question-card" data-js="karte">
+        <div class="question-card bookmark--question" data-js="karte--bookmark">
           <ion-icon
             class="ion-icon__bookmarks"
             size="large"
             name="bookmark"
             data-js="item--two"
           ></ion-icon>
-          <p class="question" data-js="question--two">
+          <p class="question question--bookmark" data-js="question--two">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
             reprehenderit culpa aliquam dolorem libero ea a explicabo nihil?
           </p>
-          <button class="button" data-js="button--question--two">
+          <button class="button button--book" data-js="button--bookmark">
             Show answer
           </button>
           <ul class="liste">
@@ -79,17 +75,20 @@
           </ul>
         </div>
 
-        <div class="question-card">
+        <div class="question-card bookmark--question" data-js="karte--bookmark">
           <ion-icon
             class="ion-icon__bookmarks"
             size="large"
             name="bookmark-outline"
+            data-js="item--two"
           ></ion-icon>
-          <p class="question">
+          <p class="question question--book">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
             reprehenderit culpa aliquam dolorem libero ea a explicabo nihil?
           </p>
-          <button class="button show-hide-answer">Hide answer</button>
+          <button class="button button--book" data-js="button--bookmark">
+            Hide answer
+          </button>
 
           <ul class="liste">
             <li>tag1</li>
@@ -100,7 +99,7 @@
         </div>
       </section>
       <!---create-->
-      <section class="create" id="create">
+      <section class="create" id="create" data-js="third--page">
         <h2>Create</h2>
         <form action="">
           <textarea
@@ -120,11 +119,11 @@
           ></textarea>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <input type="text" maxlength="30" placeholder="textinput" />
+          <button class="button submit">submit</button>
         </form>
-        <button class="but submit">submit</button>
       </section>
       <!---profile-->
-      <section class="profile" id="settings">
+      <section class="profile" id="settings" data-js="fourth--page">
         <h2>Profile</h2>
         <figure>
           <img
@@ -144,19 +143,23 @@
           <ion-icon size="large" name="logo-javascript"></ion-icon>
           <ion-icon size="large" name="logo-react"></ion-icon>
         </section>
-
-        <button class="but logout">logout</button>
       </section>
     </main>
     <footer>
-      <ul class="liste">
-        <li><a class="footer__options" href="#quiz">quiz-app</a></li>
-        <li><a class="footer__options" href="#bookmarks">Bookmarks</a></li>
-        <li><a class="footer__options" href="#create">Create</a></li>
-        <li>
-          <a class="footer__options" href="#settings">Settings</a>
-        </li>
-      </ul>
+      <nav class="navigation">
+        <button class="button--nav button1" data-js="option1">
+          <a href="#quiz">Quiz</a>
+        </button>
+        <button class="button--nav button2" data-js="option2">
+          <a href="#bookmarks">Bookmarks</a>
+        </button>
+        <button class="button--nav button3" data-js="option3">
+          <a href="#create">Create</a>
+        </button>
+        <button class="button--nav button4" data-js="option4">
+          <a href="#settings">Settings</a>
+        </button>
+      </nav>
     </footer>
     <script src="index.js" defer></script>
     <script
