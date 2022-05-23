@@ -1,4 +1,5 @@
 @import './globals.css';
+@import './utility.css';
 
 body {
   background-image: linear-gradient(45deg, yellow, orange, rgb(232 89 89));
@@ -194,20 +195,8 @@ img:hover {
   color: wheat;
 }
 
-.item--one__move {
-  position: absolute;
-  top: -1rem;
-  right: 12rem;
-  transition: 1.5s ease-in-out;
-  transform: translate3d(-190px, 50px, 350px);
-}
-
 span {
   margin: 15px 0 0 40px;
-}
-
-.hide {
-  display: none;
 }
 
 .button {
@@ -240,14 +229,15 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .button--book {
   position: absolute;
-  top: 10rem;
+  top: 7rem;
 }
 
-.card--move {
-  transform: rotate(360deg);
-  transition: 0.8s ease-in-out;
+.answer2 {
+  margin-left: 1rem;
+  word-break: break-all;
 }
