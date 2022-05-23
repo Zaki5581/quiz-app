@@ -1,3 +1,5 @@
+// const { doc } = require('prettier');
+
 // - question--one__text-color//
 const answer = document.querySelector('[data-js="answer--text"]');
 const button1 = document.querySelector('[data-js = "button--question--one"]');
@@ -50,4 +52,14 @@ btn1.addEventListener('click', () => {
   profile.classList.add('hide');
   settings.classList.add('hide');
 });
-//
+
+const antwort = document.querySelector('[data-js="span2"]');
+const but11 = document.querySelector('[data-js="button--bookmark1"]');
+const object = document.querySelector('[data-js="item--two1"]');
+const object2 = document.querySelector('[data-js="item--two2"]');
+
+but11.addEventListener('click', () => {
+  antwort.classList.toggle('book-hide');
+  object.classList.toggle('item-two1-move');
+  object2.classList.toggle('item-two2-move');
+});

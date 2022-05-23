@@ -1,0 +1,33 @@
+.book-hide {
+  display: none;
+}
+
+.card--move {
+  transform: rotate(360deg);
+  transition: 1s ease;
+}
+
+.move {
+  transform: translate(-11rem);
+}
+
+.hide {
+  display: none;
+}
+
+.item--one__move {
+  position: absolute;
+  top: -1rem;
+  right: 12rem;
+  transition: 1.5s ease-in-out;
+  transform: translate3d(-190px, 50px, 350px);
+}
+
+.item-two1-move {
+  transform: translate(-33rem);
+}
+
+.item-two2-move {
+  transition: all 0.2s ease-in;
+  transform: translate(0, -16.5rem);
+}
